@@ -1,3 +1,5 @@
 class BlogsController < ApplicationController
-  def index; end
+  def index
+    @blogs = Blog.all
+  end
 end
