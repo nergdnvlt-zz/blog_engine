@@ -1,1 +1,10 @@
 <h1>Here are some interesting blogs, <%= current_user.name %></h1>
+
+<% @blogs.each do |blog| %>
+  <p> <%= blog.body %> </p>
+  <p> <%= blog.user.name %> </p>
+<% end %>
+
+
+
+<%= link_to 'Add New Blog', new_user_blog_path %>
